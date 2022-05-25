@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.bg{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #30BB9C;
+}
+.box{
+    background: linear-gradient(245deg, #aa2337, #ce364d, #da5065, #fa7287);
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 20px;
+    animation-name: bgAnimate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    background-size: 200%;
+}
+#heading{
+    color: yellow;
+    padding-top: 200px;
+    text-align: center;
+}
+p{
+    color: #fff;
+}
+.input-details{
+    padding-top: 100px;
+}
+#de{
+    color: yellow;
+    text-align: center;
+}
+#std{
+    color: #fff;
+}
+
+@keyframes bgAnimate{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 50% 100%;}
+    100%{background-position: 100% 0%;}
+}
